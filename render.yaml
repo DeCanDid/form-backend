@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: contact-form-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: EMAIL_USER
+        value: pageantapplicationverify@gmail.com
+      - key: EMAIL_PASS
+        value: fade rtbx pdwv fogl
