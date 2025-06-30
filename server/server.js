@@ -44,7 +44,7 @@ app.post("/ph", (req, res) => {
       return res.status(500).send("Something went wrong");
     }
     console.log("Email sent:", info.response);
-    res.status(200).send("Message sent successfully");
+    // res.status(200).send("Message sent successfully");
   });
 });
 
@@ -71,7 +71,7 @@ app.post("/ks", (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) return res.status(500).send("Something went wrong");
-    res.status(200).send("Message sent successfully");
+    // res.status(200).send("Message sent successfully");
   });
 });
 
@@ -97,7 +97,7 @@ app.post("/pk", (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) return res.status(500).send("Something went wrong");
-    res.status(200).send("Message sent successfully");
+    // res.status(200).send("Message sent successfully");
   });
 });
 
