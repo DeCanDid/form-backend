@@ -38,6 +38,8 @@ app.use((req, res, next) => {
   next();
 });
 
+app.options("*", cors());
+
 // ==== /ph Route ===
 app.post("/ph", (req, res) => {
   const { ph, w_name } = req.body;
