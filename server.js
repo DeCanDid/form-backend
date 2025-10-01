@@ -11,10 +11,18 @@ const app = express();
 // for railway port
 const PORT = process.env.PORT || 5000;
 
+// app.use(
+//   cors({
+//     origin: "form-backend-production-f5f1.up.railway.app",
+//     methods: ["POST", 'GET']
+//   })
+// );
+
 app.use(
   cors({
-    origin: "form-backend-production-f5f1.up.railway.app",
-    methods: ["POST", 'GET']
+    origin: "*",
+    methods: ["POST", "GET", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
   })
 );
 
