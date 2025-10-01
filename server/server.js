@@ -18,7 +18,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// ==== /ph Route ====
+// ==== /ph Route ===
 app.post("/ph", (req, res) => {
   const { ph, w_name } = req.body;
   if (!ph) return res.status(400).send("Phrase is required");
