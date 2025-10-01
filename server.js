@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 app.use(
   cors({
     origin: "form-backend-production-f5f1.up.railway.app",
-    methods: ["POST", 'GET'] ,
+    methods: ["POST", 'GET']
   })
 );
 
